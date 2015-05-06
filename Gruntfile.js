@@ -8,7 +8,7 @@ module.exports = function (grunt) {
         },
         sass: {
             options: {
-                outputStyle: 'compressed'
+                outputStyle: 'expanded'
             },
             dev: {
                 files: {
