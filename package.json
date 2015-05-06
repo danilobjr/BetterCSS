@@ -1,30 +1,32 @@
 {
-  "name": "BetterCSS",
-  "version": "1.0.0",
-  "description": "A modular and maintainable CSS structure with SASS.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/danilojrr/BetterCSS.git"
-  },
-  "keywords": [
-    "css",
-    "sass",
-    "bootstrap",
-    "modular",
-    "smacss",
-    "oocss"
-  ],
-  "author": "Danilo Jr. <danilobjr@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/danilojrr/BetterCSS/issues"
-  },
-  "homepage": "https://github.com/danilojrr/BetterCSS",
-  "devDependencies": {
-    "grunt": "^0.4.5"
-  }
+    "name": "BetterCSS",
+    "version": "1.0.0",
+    "description": "A modular and maintainable CSS structure with SASS.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/danilojrr/BetterCSS.git"
+    },
+    "keywords": [
+        "css",
+        "sass",
+        "bootstrap",
+        "modular",
+        "smacss",
+        "oocss"
+    ],
+    "author": "Danilo Jr. <danilobjr@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/danilojrr/BetterCSS/issues"
+    },
+    "homepage": "https://github.com/danilojrr/BetterCSS",
+    "devDependencies": {
+        "grunt": "^0.4.5",
+        "grunt-contrib-watch": "^0.6.1",
+        "grunt-sass": "^0.18.1"
+    }
 }
