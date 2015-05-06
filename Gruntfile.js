@@ -8,8 +8,7 @@ module.exports = function (grunt) {
         },
         sass: {
             options: {
-                sourceComments: true,
-                outputStyle: 'expanded'
+                outputStyle: 'compressed'
             },
             dev: {
                 files: {
