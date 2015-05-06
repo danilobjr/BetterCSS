@@ -2,18 +2,18 @@ module.exports = function (grunt) {
     grunt.initConfig({
         watch: {
             sass: {
-                files: ['styles/sass/**/*.{scss,sass}'],
+                files: ['css/**/*.{scss,sass}'],
                 tasks: ['sass:dev']
             }
         },
         sass: {
-            /*options: {
-                sourceMap: true,
-                outputStyle: 'compressed'
-            },*/
+            options: {
+                sourceComments: true,
+                outputStyle: 'expanded'
+            },
             dev: {
                 files: {
-                    'styles/css/styles.css': 'styles/sass/main.sass'
+                    'css/styles.css': 'css/main.sass'
                 }
             }
         }
