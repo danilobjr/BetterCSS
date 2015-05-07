@@ -1,7 +1,7 @@
 Much Better CSS
 ===============
 
-_This repository is in alpha state. Mode docs and improvements soon. =]_
+_This repository is in alpha state. More docs and improvements soon. =]_
 
 This project is a quick start to work with a modular and maintainable CSS structure with SASS.
 
