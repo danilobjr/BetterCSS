@@ -1,0 +1,8 @@
+body > header {
+	background: url('http://medialab.hva.nl/twc/files/20130411_IMG_4284.jpg') no-repeat center #333;
+	background-size: cover;
+	
+	.overlay {
+		@include size(100%, 100%);
+	}
+}
