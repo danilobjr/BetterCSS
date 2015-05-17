@@ -525,24 +525,24 @@ address {
   font-style: normal;
   line-height: 1.428571429; }
 
-.container {
+.container, body > section {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px; }
-  .container:before, .container:after {
+  .container:before, body > section:before, .container:after, body > section:after {
     content: " ";
     display: table; }
-  .container:after {
+  .container:after, body > section:after {
     clear: both; }
   @media (min-width: 768px) {
-    .container {
+    .container, body > section {
       width: 750px; } }
   @media (min-width: 992px) {
-    .container {
+    .container, body > section {
       width: 970px; } }
   @media (min-width: 1200px) {
-    .container {
+    .container, body > section {
       width: 1170px; } }
 
 .container-fluid {
@@ -1807,11 +1807,11 @@ tbody.collapse.in {
     .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
       max-height: 200px; } }
 
-.container > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-header, .container-fluid > .navbar-collapse {
+.container > .navbar-header, body > section > .navbar-header, .container > .navbar-collapse, body > section > .navbar-collapse, .container-fluid > .navbar-header, .container-fluid > .navbar-collapse {
   margin-right: -15px;
   margin-left: -15px; }
   @media (min-width: 768px) {
-    .container > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-header, .container-fluid > .navbar-collapse {
+    .container > .navbar-header, body > section > .navbar-header, .container > .navbar-collapse, body > section > .navbar-collapse, .container-fluid > .navbar-header, .container-fluid > .navbar-collapse {
       margin-right: 0;
       margin-left: 0; } }
 
@@ -1851,7 +1851,7 @@ tbody.collapse.in {
   .navbar-brand > img {
     display: block; }
   @media (min-width: 768px) {
-    .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    .navbar > .container .navbar-brand, body.navbar > section .navbar-brand, .navbar > .container-fluid .navbar-brand {
       margin-left: -15px; } }
 
 .navbar-toggle {
@@ -6370,14 +6370,42 @@ Copyright (c) 2015 Daniel Eden
   animation-name: slideOutUp; }
 
 body {
-  background-color: whitesmoke; }
+  background-color: whitesmoke;
+  font-family: 'Open Sans', sans-serif, Arial;
+  font-size: 16px;
+  color: #6D6D6D;
+  font-weight: 300; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Montserrat, sans-serif, Arial;
+  padding-bottom: 5px;
+  color: #373432; }
+
+body > section {
+  padding-top: 80px; }
+  body > section header {
+    margin-bottom: 50px; }
+    body > section header h1 {
+      text-transform: uppercase;
+      font-size: 60px;
+      font-weight: 700;
+      letter-spacing: -5px;
+      line-height: 50px; }
+    body > section header .border {
+      display: block;
+      width: 100px;
+      height: 10px;
+      margin: 30px 0;
+      background-color: #999999; }
+    body > section header p {
+      font-size: 20px;
+      line-height: 30px; }
 
 body > header {
   color: white;
   text-align: center;
   background: url('http://medialab.hva.nl/twc/files/20130411_IMG_4284.jpg') no-repeat center #333;
-  background-size: cover;
-  background-color: gray; }
+  background-size: cover; }
   body > header .overlay {
     padding: 100px 0;
     background-color: rgba(0, 0, 0, 0.9); }
@@ -6398,7 +6426,7 @@ body > header {
     font-size: 60px; }
   body > header h2 {
     margin-top: 20px;
-    font-family: Montserrat; }
+    font-family: Montserrat, sans-serif, Arial; }
   body > header .scroll-down-to-content {
     display: block;
     margin: 75px auto 0;

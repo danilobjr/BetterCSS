@@ -1,0 +1,28 @@
+body > section {
+	@extend .container;
+	padding-top: 80px;
+	
+	header {
+		margin-bottom: 50px;
+		
+		h1 {
+			text-transform: uppercase;
+			font-size: 60px;
+			font-weight: 700;
+			letter-spacing: -5px;
+			line-height: 50px;
+		}
+		
+		.border {
+			display: block;
+			@include size(100px, 10px);
+			@include margin(30px 0);
+			background-color: #999999;
+		}
+		
+		p {
+			font-size: 20px;
+			line-height: 30px;
+		}
+	}
+}
