@@ -11,3 +11,21 @@ h1, h2, h3, h4, h5, h6 {
 	padding-bottom: 5px;
 	color: $headers-color;
 }
+
+button {
+	padding: 8px 25px;
+	text-transform: uppercase;
+	background-color: transparent;
+	border: 2px solid #222;
+	border-radius: 3px;
+	
+	&:hover {
+		color: whitesmoke;
+		background-color: #222;
+	}
+}
+
+p {
+	padding-bottom: 10px;
+	line-height: 25px;
+}

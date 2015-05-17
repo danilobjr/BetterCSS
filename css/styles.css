@@ -6381,6 +6381,20 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 5px;
   color: #373432; }
 
+button {
+  padding: 8px 25px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid #222;
+  border-radius: 3px; }
+  button:hover {
+    color: whitesmoke;
+    background-color: #222; }
+
+p {
+  padding-bottom: 10px;
+  line-height: 25px; }
+
 body > section {
   padding-top: 80px; }
   body > section header {
