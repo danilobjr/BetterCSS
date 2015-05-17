@@ -6463,7 +6463,8 @@ body > header {
   font-family: 'Open Sans';
   font-weight: 300;
   border-width: 0 0 1px;
-  border-radius: 0; }
+  border-radius: 0;
+  z-index: 1; }
   #main-nav ul {
     text-align: center; }
   #main-nav li, #main-nav a {
@@ -6482,6 +6483,8 @@ body > header {
     background-color: black; }
     #main-nav .navbar-toggle .icon-bar {
       background-color: white; }
+  #main-nav .navbar-header {
+    padding: 8px 0px; }
 
 @media (min-width: 480px) and (max-width: 768px) {
   #main-nav ul {
