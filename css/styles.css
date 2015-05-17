@@ -6402,7 +6402,6 @@ body > section {
       line-height: 30px; }
 
 body > header {
-  color: white;
   text-align: center;
   background: url('http://medialab.hva.nl/twc/files/20130411_IMG_4284.jpg') no-repeat center #333;
   background-size: cover; }
@@ -6420,6 +6419,8 @@ body > header {
       border-radius: 50%; }
     body > header figure img {
       border-radius: 50%; }
+  body > header h1, body > header h2 {
+    color: white; }
   body > header h1 {
     margin-top: 50px;
     font-family: Pacifico;
@@ -6483,3 +6484,7 @@ body > header {
 
 .sticky-wrapper #main-nav {
   width: 100%; }
+
+#about img {
+  width: 100%;
+  max-width: 600px; }
