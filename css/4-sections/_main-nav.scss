@@ -22,7 +22,7 @@
 			text-decoration: none;
 		}
 		
-		&:hover, &:active {			
+		&:hover, &:active {
 			color: #555;
 			background-color: #e7e7e7;
 		}
@@ -60,4 +60,8 @@
 			float: none;
 		}
 	}
+}
+
+.sticky-wrapper #main-nav {
+	width: 100%;
 }

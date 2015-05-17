@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
+    <header id="home">
         <div class="overlay">
             <figure>
                 <div class="border"></div>
@@ -14,7 +14,7 @@
             </figure>
             <h1>Danilo Barros</h1>
             <h2>Developer. Designer.</h2>
-            <span class="go-down animated infinite bounce fa fa-angle-double-down"></span>
+            <a class="scroll-down-to-content animated infinite bounce fa fa-angle-double-down" data-scroll href="#about"></a>
         </div>
     </header>
     
@@ -31,14 +31,14 @@
             
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#resume">Resume</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#clients">Clients</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li class="active"><a data-scroll href="#home">Home</a></li>
+                    <li><a data-scroll href="#about">About</a></li>
+                    <li><a data-scroll href="#resume">Resume</a></li>
+                    <li><a data-scroll href="#skills">Skills</a></li>
+                    <li><a data-scroll href="#services">Services</a></li>
+                    <li><a data-scroll href="#portfolio">Portfolio</a></li>
+                    <li><a data-scroll href="#clients">Clients</a></li>
+                    <li><a data-scroll href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -390,5 +390,37 @@
     <!--Scripts-->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+        
+    <script>
+        $(function () {
+            'use sctrict';
+            
+            var _mainNav = $('#main-nav');
+            
+            // automatic scroll to
+            smoothScroll.init();
+            
+            // stick menu on top when mouse scrolls down
+            _mainNav.sticky({topSpacing:0});
+            
+            // set active section
+            _mainNav.find('a').on('click', function () {
+                activateManuItemFor($(this));
+            });
+            
+            // set about section active
+            $('.scroll-down-to-content').on('click', function () {
+                activateManuItemFor($('[href=#about]'));
+            });
+            
+            // functions
+            function activateManuItemFor(selector) {
+                var parentLi = selector.closest('li').addClass('active');
+                parentLi.siblings().removeClass('active');
+            }
+        });
+    </script>
 </body>
 </html>

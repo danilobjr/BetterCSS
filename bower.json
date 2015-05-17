@@ -17,6 +17,7 @@
     "bootstrap-sass": "~3.3.4",
     "bourbon": "~4.2.3",
     "font-awesome": "~4.3.0",
-    "animate.css": "~3.2.6"
+    "animate.css": "~3.2.6",
+    "jquery-sticky": "~1.0.1"
   }
 }
