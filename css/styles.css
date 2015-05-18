@@ -6415,19 +6415,19 @@ body > section {
       font-size: 20px;
       line-height: 30px; }
 
-.background-section {
+.section-background {
   padding: 0; }
-  .background-section .section-padding {
+  .section-background .section-padding {
     padding: 80px 0; }
-  .background-section header {
+  .section-background header {
     text-align: center; }
-    .background-section header h1 {
+    .section-background header h1 {
       color: white;
       font-size: 36px;
       font-weight: normal;
       letter-spacing: 0;
       line-height: 36px; }
-    .background-section header .border {
+    .section-background header .border {
       height: 2px;
       margin: 0 auto; }
 
