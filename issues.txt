@@ -1,1 +1,2 @@
 1. javascript behavior for set active menu item when refresh the page with a particular section id in the url like (...index.html#about)
+2. check if background css propertyhas a place to use background-size inside of it
