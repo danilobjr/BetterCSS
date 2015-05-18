@@ -1,6 +1,5 @@
 body > section {
-	@extend .container;
-	padding-top: 80px;
+	padding: 80px 0;
 	
 	header {
 		margin-bottom: 50px;
@@ -23,6 +22,31 @@ body > section {
 		p {
 			font-size: 20px;
 			line-height: 30px;
+		}
+	}
+}
+
+.background-section {
+	padding: 0;
+	
+	.section-padding {
+		padding: 80px 0;
+	}
+	
+	header {
+		text-align: center;
+		
+		h1 {
+			color: white;
+			font-size: 36px;
+			font-weight: normal;
+			letter-spacing: 0;
+			line-height: 36px;
+		}
+		
+		.border {
+			height: 2px;
+			margin: 0 auto;
 		}
 	}
 }

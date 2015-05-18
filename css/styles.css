@@ -525,24 +525,24 @@ address {
   font-style: normal;
   line-height: 1.428571429; }
 
-.container, body > section {
+.container {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px; }
-  .container:before, body > section:before, .container:after, body > section:after {
+  .container:before, .container:after {
     content: " ";
     display: table; }
-  .container:after, body > section:after {
+  .container:after {
     clear: both; }
   @media (min-width: 768px) {
-    .container, body > section {
+    .container {
       width: 750px; } }
   @media (min-width: 992px) {
-    .container, body > section {
+    .container {
       width: 970px; } }
   @media (min-width: 1200px) {
-    .container, body > section {
+    .container {
       width: 1170px; } }
 
 .container-fluid {
@@ -1807,11 +1807,11 @@ tbody.collapse.in {
     .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
       max-height: 200px; } }
 
-.container > .navbar-header, body > section > .navbar-header, .container > .navbar-collapse, body > section > .navbar-collapse, .container-fluid > .navbar-header, .container-fluid > .navbar-collapse {
+.container > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-header, .container-fluid > .navbar-collapse {
   margin-right: -15px;
   margin-left: -15px; }
   @media (min-width: 768px) {
-    .container > .navbar-header, body > section > .navbar-header, .container > .navbar-collapse, body > section > .navbar-collapse, .container-fluid > .navbar-header, .container-fluid > .navbar-collapse {
+    .container > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-header, .container-fluid > .navbar-collapse {
       margin-right: 0;
       margin-left: 0; } }
 
@@ -1851,7 +1851,7 @@ tbody.collapse.in {
   .navbar-brand > img {
     display: block; }
   @media (min-width: 768px) {
-    .navbar > .container .navbar-brand, body.navbar > section .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
       margin-left: -15px; } }
 
 .navbar-toggle {
@@ -6396,7 +6396,7 @@ p {
   line-height: 25px; }
 
 body > section {
-  padding-top: 80px; }
+  padding: 80px 0; }
   body > section header {
     margin-bottom: 50px; }
     body > section header h1 {
@@ -6415,13 +6415,36 @@ body > section {
       font-size: 20px;
       line-height: 30px; }
 
+.background-section {
+  padding: 0; }
+  .background-section .section-padding {
+    padding: 80px 0; }
+  .background-section header {
+    text-align: center; }
+    .background-section header h1 {
+      color: white;
+      font-size: 36px;
+      font-weight: normal;
+      letter-spacing: 0;
+      line-height: 36px; }
+    .background-section header .border {
+      height: 2px;
+      margin: 0 auto; }
+
+.overlay {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9); }
+
 body > header {
   text-align: center;
   background: url('http://medialab.hva.nl/twc/files/20130411_IMG_4284.jpg') no-repeat center #333;
   background-size: cover; }
   body > header .overlay {
-    padding: 100px 0;
-    background-color: rgba(0, 0, 0, 0.9); }
+    padding: 100px 0; }
   body > header figure {
     display: inline-block;
     position: relative; }
@@ -6509,3 +6532,12 @@ body > header {
 #about .section-body h2 {
   margin-top: 0;
   line-height: 22px; }
+
+#status {
+  background: url(../images/about-bg.jpg);
+  background-size: cover; }
+  #status:before {
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); }

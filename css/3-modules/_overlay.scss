@@ -1,0 +1,5 @@
+.overlay {
+	@include position(relative, 0 null null 0);
+	@include size(100%, 100%);
+	background-color: rgba(0,0,0,.9);
+}
