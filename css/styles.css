@@ -6417,7 +6417,7 @@ body > section {
 
 .section-background {
   padding: 0;
-  background-size: cover !important; }
+  background-size: cover; }
   .section-background .section-padding {
     padding: 80px 0; }
   .section-background header {
@@ -6535,4 +6535,4 @@ body > header {
   line-height: 22px; }
 
 #status {
-  background: url(../images/about-bg.jpg); }
+  background-image: url(../images/about-bg.jpg); }
