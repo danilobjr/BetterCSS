@@ -6549,3 +6549,94 @@ body > header {
       padding: 20px 0 0;
       margin: 0;
       text-transform: uppercase; }
+
+#resume .timeline {
+  padding-left: 35px;
+  margin-top: 30px;
+  border-left: 1px dashed #ccc; }
+  #resume .timeline h3 {
+    padding: 0;
+    margin: 0; }
+  #resume .timeline p {
+    padding: 0;
+    margin: 0; }
+  #resume .timeline .title h3 {
+    text-transform: uppercase; }
+  #resume .timeline .title .icon {
+    background-color: #FBA24E; }
+  #resume .timeline > div {
+    position: relative;
+    padding: 26px 30px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px; }
+    #resume .timeline > div:before {
+      content: ' ';
+      position: absolute;
+      top: 31px;
+      right: 0;
+      bottom: 0;
+      left: -8px;
+      height: 0;
+      width: 0;
+      border-bottom: 8px solid transparent;
+      border-right: 8px solid #ccc;
+      border-top: 8px solid transparent; }
+    #resume .timeline > div:after {
+      content: ' ';
+      position: absolute;
+      top: 31px;
+      right: 0;
+      bottom: 0;
+      left: -6px;
+      height: 0;
+      width: 0;
+      border-bottom: 8px solid transparent;
+      border-right: 8px solid whitesmoke;
+      border-top: 8px solid transparent; }
+  #resume .timeline > div:last-of-type {
+    margin-bottom: 0; }
+  #resume .timeline .icon {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    bottom: 0;
+    left: -59px;
+    width: 45px;
+    height: 45px;
+    color: white;
+    background-color: #3BC2C8;
+    border-radius: 50%; }
+    #resume .timeline .icon i {
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      bottom: 50%;
+      left: 50%; }
+    #resume .timeline .icon .fa-lightbulb-o {
+      margin-left: -9px;
+      margin-top: -16px; }
+    #resume .timeline .icon .fa-plus {
+      display: block;
+      margin-left: -12px;
+      margin-top: -15px; }
+    #resume .timeline .icon .fa-minus {
+      display: none;
+      margin-left: -12px;
+      margin-top: -15px; }
+  #resume .timeline > div:not(:first-of-type) .icon {
+    cursor: pointer; }
+  #resume .timeline .period {
+    position: absolute;
+    top: 27px;
+    right: -145px;
+    bottom: 27px;
+    left: -145px;
+    max-width: 86px;
+    max-height: 20px; }
+  #resume .timeline .content {
+    display: none; }
+  #resume .timeline .opened .fa-plus {
+    display: none !important; }
+  #resume .timeline .opened .fa-minus {
+    display: block !important; }

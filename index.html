@@ -103,63 +103,75 @@
             <span class="border"></span>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem debitis ratione odit, dolores unde necessitatibus nesciunt itaque impedit numquam voluptatibus nulla, ullam ducimus vel ut inventore cupiditate. Suscipit, itaque, earum?</p>
         </header>
-        <div>
-            <section class="area">
-                <article class="area-title">
-                    <i><!-- icon goes here --></i>
+        <div class="row">
+            <div class="timeline col-sm-7 col-sm-offset-3">
+                <div class="title">
+                    <span class="icon">
+                        <i class="fa fa-lightbulb-o fa-2x"></i>
+                    </span>
+                    <h3>Work Experience</h3>
+                </div>
+                <div>
+                    <span class="icon">
+                        <i class="fa fa-plus fa-2x"></i>
+                        <i class="fa fa-minus fa-2x"></i>
+                    </span>
+                    <small class="period">2011 - 2012</small>
+                    <h3>Senior UX Designer @ Company</h3>
                     <div class="content">
-                        <h1>Work Experience</h1>
-                    </div>
-                </article>
-                <article>
-                    <i><!-- icon goes here --></i>
-                    <span class="short-period">2011 - 2012</span>
-                    <div class="content">
-                        <h1>Senior UX Designer @ Company</h1>
-                        <span>from 2011 to present day</span>
+                        <small>from 2011 to present day</small>
                         <h4>Lorem ipsum dolor sit amet</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa hic obcaecati voluptatem temporibus beatae harum a pariatur ex modi. Beatae officia doloremque mollitia molestias fugiat inventore consequatur sequi laborum. Cupiditate.</p>
                     </div>
-                </article>
-                <article>
-                    <i><!-- icon goes here --></i>
-                    <span class="short-period">2011 - 2012</span>
+                </div>
+                <div>
+                    <span class="icon">
+                        <i class="fa fa-plus fa-2x"></i>
+                        <i class="fa fa-minus fa-2x"></i>
+                    </span>
+                    <small class="period">2011 - 2012</small>
+                    <h3>Senior UX Designer @ Company</h3>
                     <div class="content">
-                        <h1>Senior UX Designer @ Company</h1>
-                        <span>from 2011 to present day</span>
+                        <small>from 2011 to present day</small>
                         <h4>Lorem ipsum dolor sit amet</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa hic obcaecati voluptatem temporibus beatae harum a pariatur ex modi. Beatae officia doloremque mollitia molestias fugiat inventore consequatur sequi laborum. Cupiditate.</p>
                     </div>
-                </article>
-            </section>
-            <section class="area">
-                <article class="area-title">
-                    <i><!-- icon goes here --></i>
+                </div>
+            </div>
+            <div class="timeline col-sm-7 col-sm-offset-3">
+                <div class="title">
+                    <span class="icon">
+                        <i class="fa fa-lightbulb-o fa-2x"></i>
+                    </span>
+                    <h3>Work Experience</h3>
+                </div>
+                <div>
+                    <span class="icon">
+                        <i class="fa fa-plus fa-2x"></i>
+                        <i class="fa fa-minus fa-2x"></i>
+                    </span>
+                    <small class="period">2011 - 2012</small>
+                    <h3>Senior UX Designer @ Company</h3>
                     <div class="content">
-                        <h1>Work Experience</h1>
-                    </div>
-                </article>
-                <article>
-                    <i><!-- icon goes here --></i>
-                    <span class="short-period">2011 - 2012</span>
-                    <div class="content">
-                        <h1>Senior UX Designer @ Company</h1>
-                        <span>from 2011 to present day</span>
+                        <small>from 2011 to present day</small>
                         <h4>Lorem ipsum dolor sit amet</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa hic obcaecati voluptatem temporibus beatae harum a pariatur ex modi. Beatae officia doloremque mollitia molestias fugiat inventore consequatur sequi laborum. Cupiditate.</p>
                     </div>
-                </article>
-                <article>
-                    <i><!-- icon goes here --></i>
-                    <span class="short-period">2011 - 2012</span>
+                </div>
+                <div>
+                    <span class="icon">
+                        <i class="fa fa-plus fa-2x"></i>
+                        <i class="fa fa-minus fa-2x"></i>
+                    </span>
+                    <small class="period">2011 - 2012</small>
+                    <h3>Senior UX Designer @ Company</h3>
                     <div class="content">
-                        <h1>Senior UX Designer @ Company</h1>
-                        <span>from 2011 to present day</span>
+                        <small>from 2011 to present day</small>
                         <h4>Lorem ipsum dolor sit amet</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa hic obcaecati voluptatem temporibus beatae harum a pariatur ex modi. Beatae officia doloremque mollitia molestias fugiat inventore consequatur sequi laborum. Cupiditate.</p>
                     </div>
-                </article>
-            </section>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -437,10 +449,19 @@
                 activateManuItemFor($('[href=#about]'));
             });
             
+            $('.icon').on('click', toggleResumeItemContent);
+            
             // functions
             function activateManuItemFor(selector) {
                 var parentLi = selector.closest('li').addClass('active');
                 parentLi.siblings().removeClass('active');
+            }
+            
+            function toggleResumeItemContent() {
+                var resumeItem = $(this).closest('div');
+                
+                resumeItem.toggleClass('opened');
+                resumeItem.find('.content').slideToggle();
             }
         });
     </script>

@@ -1,0 +1,104 @@
+$margin-timeline-items: 30px;
+
+#resume .timeline {
+	padding-left: 35px;
+	margin-top: $margin-timeline-items;
+	border-left: 1px dashed $gray-light;
+	
+	h3 {
+		padding: 0;
+		margin: 0;
+	}
+	
+	p {		
+		padding: 0;
+		margin: 0;
+	}
+	
+	.title {
+		h3 {
+			text-transform: uppercase;
+		}
+		
+		.icon {
+			background-color: $icon-orange;
+		}
+	} 
+	
+	& > div {
+		position: relative;
+		padding: 26px 30px;
+		margin-bottom: $margin-timeline-items;
+		border: 1px solid $gray-light;
+		border-radius: 4px;
+		
+		&:before {
+			content: ' ';
+			@include position(absolute, 31px 0 0 -8px);
+			@include triangle(16px, $gray-light, left);
+		}
+		
+		&:after {
+			content: ' ';
+			@include position(absolute, 31px 0 0 -6px);
+			@include triangle(16px, whitesmoke, left);
+		}
+	}
+	
+	& > div:last-of-type {
+		margin-bottom: 0;
+	}
+	
+	.icon {
+		@include position(absolute, 15px 0 0 -59px);
+		@include size(45px, 45px);
+		color: white;
+		background-color: $icon-blue;
+		border-radius: 50%;
+		
+		i {
+			@include position(absolute, 50% 50%);
+		}
+		
+		.fa-lightbulb-o {
+			margin-left: -9px;
+			margin-top: -16px;
+		}
+		
+		.fa-plus {
+			display: block;
+			margin-left: -12px;
+			margin-top: -15px;
+		}
+		
+		.fa-minus {
+			display: none;
+			margin-left: -12px;
+			margin-top: -15px;
+		}
+	}	
+	
+	& > div:not(:first-of-type) .icon {
+		cursor: pointer;
+	}
+	
+	.period {
+		@include position(absolute, 27px -145px);
+		max-width: 86px;
+		max-height: 20px;
+	}
+	
+	.content {
+		display: none;
+	}
+	
+	.opened {		
+		.fa-plus {
+			display: none !important;
+		}
+		
+		.fa-minus {
+			display: block !important;
+		}
+	}
+}
