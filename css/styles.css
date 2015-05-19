@@ -6535,4 +6535,17 @@ body > header {
   line-height: 22px; }
 
 #status {
-  background-image: url(../images/about-bg.jpg); }
+  background-image: url(../images/about-bg.jpg);
+  font-size: 20px;
+  color: white;
+  text-align: center; }
+  #status .section-padding {
+    padding: 100px 0 150px; }
+  #status .status {
+    margin: 80px 0 0; }
+    #status .status i {
+      font-size: 50px; }
+    #status .status p {
+      padding: 20px 0 0;
+      margin: 0;
+      text-transform: uppercase; }
