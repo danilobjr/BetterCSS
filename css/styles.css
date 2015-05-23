@@ -6640,3 +6640,15 @@ body > header {
     display: none !important; }
   #resume .timeline .opened .fa-minus {
     display: block !important; }
+
+#skills .skill {
+  width: 100%;
+  margin-bottom: 50px;
+  background-color: #ccc;
+  border-radius: 3px; }
+#skills .score {
+  padding: 8px 12px;
+  background-color: black;
+  border-radius: 3px; }
+#skills strong {
+  color: white; }

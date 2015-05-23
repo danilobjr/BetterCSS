@@ -1,5 +1,5 @@
 body {
-	background-color: $background-color;
+	background-color: $white;
 	font-family: $open-sans;
 	font-size: 16px;
 	color: #6D6D6D;
@@ -20,7 +20,7 @@ button {
 	border-radius: 3px;
 	
 	&:hover {
-		color: whitesmoke;
+		color: $white;
 		background-color: #222;
 	}
 }

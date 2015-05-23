@@ -53,7 +53,7 @@ body > header {
 		}
 		
 		&:hover {
-			color: $background-color;
+			color: $white;
 			
 			@include animation-play-state(paused);
 		}
