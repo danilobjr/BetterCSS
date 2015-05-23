@@ -1,0 +1,26 @@
+#services {
+	.service {
+		padding: 35px 20px 20px;
+		margin-bottom: 20px;
+		text-align: center;
+		@include transition(all 200ms);
+		
+		&:hover {
+			cursor: default;
+			background-color: #222222;
+			
+			i, h5 {
+				color: $white;
+			}
+			
+			p {
+				color: darken($white, 45%);
+			}
+		}
+		
+		i {
+			margin-bottom: 15px;
+			color: $gray;
+		}
+	}	
+}
