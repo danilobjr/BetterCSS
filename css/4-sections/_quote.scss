@@ -1,0 +1,9 @@
+#quote {
+	background-image: url(../images/bg.jpg);
+	
+	blockquote {
+		&, h1 {		
+			color: $white;
+		}
+	}
+}
