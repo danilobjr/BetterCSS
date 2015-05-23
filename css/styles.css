@@ -6647,6 +6647,7 @@ body > header {
   background-color: #ccc;
   border-radius: 3px; }
 #skills .score {
+  width: 80%;
   padding: 8px 12px;
   background-color: black;
   border-radius: 3px; }
