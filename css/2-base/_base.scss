@@ -14,16 +14,17 @@ h1, h2, h3, h4, h5, h6 {
 
 button {
 	padding: 8px 25px;
+	color: $gray-dark;
 	text-transform: uppercase;
 	background-color: transparent;
-	border: 2px solid #222;
+	border: 2px solid $gray-dark;
 	border-radius: 3px;
 	
 	-webkit-appearance: none;
 	
 	&:hover, a.btn:hover {
 		color: $white;
-		background-color: #222;
+		background-color: $gray-dark;
 		text-decoration: none;
 	}
 }
