@@ -459,8 +459,8 @@
         </div>
     </section>
 
-    <footer>
-        <p>&copy;<span class="actual-year"></span> made with love using <a href="http://sass-lang.com/">SASS</a></p>
+    <footer class="container">
+        <p>&copy; <span class="this-year"></span> made with love using <a href="http://sass-lang.com/">SASS</a></p>
     </footer>
     
     <!--Scripts-->
@@ -492,6 +492,9 @@
             });
             
             $('.icon').on('click', toggleResumeItemContent);
+            
+            // set this year in .this-year element
+            $('.this-year').text(new Date().getFullYear());
             
             // functions
             function activateManuItemFor(selector) {

@@ -6582,3 +6582,6 @@ body > header {
   color: black; }
 #contact .social [class*=fa-behance] {
   color: #3878F6; }
+
+body > footer p {
+  text-align: center; }
