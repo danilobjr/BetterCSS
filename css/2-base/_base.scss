@@ -9,7 +9,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-family: $montserrat;
 	padding-bottom: 5px;
-	color: $headers-color;
+	color: $gray-dark;
 }
 
 button {
@@ -19,9 +19,12 @@ button {
 	border: 2px solid #222;
 	border-radius: 3px;
 	
-	&:hover {
+	-webkit-appearance: none;
+	
+	&:hover, a.btn:hover {
 		color: $white;
 		background-color: #222;
+		text-decoration: none;
 	}
 }
 
@@ -31,6 +34,7 @@ p {
 }
 
 blockquote {
-	border: none;
+	color: $white;
 	text-align: center;
+	border: none;
 }

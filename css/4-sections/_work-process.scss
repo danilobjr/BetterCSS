@@ -1,0 +1,24 @@
+#work-process {
+	background-image: url(../images/bg.jpg);
+	
+	.step {
+		color: $white;
+		
+		.box {
+			@include size(120px, 120px);
+			padding-top: 20px;
+			margin: 50px auto;
+			text-align: center;
+			border: 4px solid $white;
+			
+			i {
+				font-size: 2.5em;				
+			}
+			
+			h4 {
+				color: $white;
+				text-transform: uppercase;
+			}
+		}
+	}
+}

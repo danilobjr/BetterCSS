@@ -1,0 +1,12 @@
+.btn {
+	@extend button;
+}
+
+.btn-white {
+	border-color: $white;
+	
+	&:hover {
+		color: $gray-dark;
+		background-color: $white;
+	}
+}
