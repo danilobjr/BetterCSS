@@ -6546,6 +6546,11 @@ body > header {
     margin-bottom: 25px;
     color: whitesmoke; }
 
+#clients .client {
+  border: 1px solid #373432; }
+  #clients .client img {
+    width: 100%; }
+
 #contact h2 {
   text-transform: uppercase; }
 #contact .contacts, #contact .social {
