@@ -6196,14 +6196,15 @@ h1, h2, h3, h4, h5, h6 {
 
 button, .btn {
   padding: 8px 25px;
+  color: #373432;
   text-transform: uppercase;
   background-color: transparent;
-  border: 2px solid #222;
+  border: 2px solid #373432;
   border-radius: 3px;
   -webkit-appearance: none; }
   button:hover, .btn:hover, button a.btn:hover, .btn a.btn:hover {
     color: whitesmoke;
-    background-color: #222;
+    background-color: #373432;
     text-decoration: none; }
 
 p {
@@ -6261,6 +6262,7 @@ body > section {
   background-color: rgba(0, 0, 0, 0.8); }
 
 .btn-white {
+  color: whitesmoke;
   border-color: whitesmoke; }
   .btn-white:hover {
     color: #373432;
