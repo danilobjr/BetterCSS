@@ -3,6 +3,9 @@ $white: whitesmoke;
 $main-font-color: #6D6D6D;
 $icon-orange: #FBA24E;
 $icon-blue: #3BC2C8;
+$input-focus: #EEEEEE;
+$input-border: #E0E0E0;
+
 $gray-dark: #373432;
 $gray: #999999;
 $gray-light: #CCCCCC;
@@ -12,3 +15,6 @@ $pacifico: Pacifico;
 $common-fonts: sans-serif, Arial;
 $montserrat: Montserrat, $common-fonts;
 $open-sans: 'Open Sans', $common-fonts;
+
+// animation
+$animation-time: 200ms;

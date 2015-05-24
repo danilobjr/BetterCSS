@@ -12,6 +12,37 @@ h1, h2, h3, h4, h5, h6 {
 	color: $gray-dark;
 }
 
+p {
+	padding-bottom: 10px;
+	line-height: 25px;
+}
+
+blockquote {
+	color: $white;
+	text-align: center;
+	border: none;
+}
+
+input, textarea {
+	display: block;
+	width: 100%;
+	padding: 20px 12px;
+	margin-bottom: 30px;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+	border: 2px solid $input-border;
+	border-radius: 2px;
+	background-color: $white;
+	
+	@include transition(background-color $animation-time);
+	
+	&:active, &:focus {
+		background-color: $input-focus;
+		outline-color: $input-border;
+	}
+}
+
 button {
 	padding: 8px 25px;
 	color: $gray-dark;
@@ -27,15 +58,4 @@ button {
 		background-color: $gray-dark;
 		text-decoration: none;
 	}
-}
-
-p {
-	padding-bottom: 10px;
-	line-height: 25px;
-}
-
-blockquote {
-	color: $white;
-	text-align: center;
-	border: none;
 }

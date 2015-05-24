@@ -1,0 +1,50 @@
+#contact {
+	h2 {
+		text-transform: uppercase;
+	}
+	
+	.contacts, .social {
+		margin-top: 50px;
+	}
+	
+	.contacts {
+		padding-left: 75px;
+		list-style-type: none;
+		
+		li {
+			position: relative;
+			margin-top: 26px;
+			
+			&:before {
+				content: ' ';
+				@include position(absolute, -8px 0 0 -50px);
+				@include size(39px, 39px);
+				border-radius: 50%;
+				background-color: $gray-dark;
+			}
+			
+			i {
+				@include position(absolute, 2px 0 0 -40px);
+				color: $white;
+			}
+		}
+	}
+	
+	.social {			
+		a {
+			display: inline-block;
+		}
+			
+		[class*=linkedin] {			
+			color: #2089B5;
+		}
+		
+		[class*=fa-github] {
+			color: black;
+		}
+		
+		[class*=fa-behance] {
+			color: #3878F6;
+		}
+	}
+}

@@ -6194,6 +6194,33 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 5px;
   color: #373432; }
 
+p {
+  padding-bottom: 10px;
+  line-height: 25px; }
+
+blockquote {
+  color: whitesmoke;
+  text-align: center;
+  border: none; }
+
+input, textarea {
+  display: block;
+  width: 100%;
+  padding: 20px 12px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: 2px solid #E0E0E0;
+  border-radius: 2px;
+  background-color: whitesmoke;
+  -webkit-transition: background-color 200ms;
+  -o-transition: background-color 200ms;
+  transition: background-color 200ms; }
+  input:active, input:focus, textarea:active, textarea:focus {
+    background-color: #EEEEEE;
+    outline-color: #E0E0E0; }
+
 button, .btn {
   padding: 8px 25px;
   color: #373432;
@@ -6206,15 +6233,6 @@ button, .btn {
     color: whitesmoke;
     background-color: #373432;
     text-decoration: none; }
-
-p {
-  padding-bottom: 10px;
-  line-height: 25px; }
-
-blockquote {
-  color: whitesmoke;
-  text-align: center;
-  border: none; }
 
 body > section {
   padding: 80px 0; }
@@ -6527,3 +6545,40 @@ body > header {
   #hire-me h1 {
     margin-bottom: 25px;
     color: whitesmoke; }
+
+#contact h2 {
+  text-transform: uppercase; }
+#contact .contacts, #contact .social {
+  margin-top: 50px; }
+#contact .contacts {
+  padding-left: 75px;
+  list-style-type: none; }
+  #contact .contacts li {
+    position: relative;
+    margin-top: 26px; }
+    #contact .contacts li:before {
+      content: ' ';
+      position: absolute;
+      top: -8px;
+      right: 0;
+      bottom: 0;
+      left: -50px;
+      width: 39px;
+      height: 39px;
+      border-radius: 50%;
+      background-color: #373432; }
+    #contact .contacts li i {
+      position: absolute;
+      top: 2px;
+      right: 0;
+      bottom: 0;
+      left: -40px;
+      color: whitesmoke; }
+#contact .social a {
+  display: inline-block; }
+#contact .social [class*=linkedin] {
+  color: #2089B5; }
+#contact .social [class*=fa-github] {
+  color: black; }
+#contact .social [class*=fa-behance] {
+  color: #3878F6; }
