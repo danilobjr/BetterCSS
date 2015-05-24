@@ -59,3 +59,12 @@ button {
 		text-decoration: none;
 	}
 }
+
+a {
+	color: lighten($main-font-color, 30%);
+	
+	&:hover {
+		color: darken($main-font-color, 30%);
+		text-decoration: none;
+	}
+}

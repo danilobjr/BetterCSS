@@ -6234,6 +6234,12 @@ button, .btn {
     background-color: #373432;
     text-decoration: none; }
 
+a {
+  color: #bababa; }
+  a:hover {
+    color: #202020;
+    text-decoration: none; }
+
 body > section {
   padding: 80px 0; }
   body > section header {
@@ -6334,7 +6340,7 @@ body > header {
   font-weight: 300;
   border-width: 0 0 1px;
   border-radius: 0;
-  z-index: 1; }
+  z-index: 10; }
   #main-nav ul {
     text-align: center; }
   #main-nav li, #main-nav a {
@@ -6550,6 +6556,37 @@ body > header {
   border: 1px solid #373432; }
   #clients .client img {
     width: 100%; }
+#clients .testimonials {
+  margin-top: 150px; }
+  #clients .testimonials .testimony {
+    padding: 80px 55px 30px;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 4px 4px #f2f2f2; }
+    #clients .testimonials .testimony img {
+      position: absolute;
+      top: -60px;
+      right: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -60px; }
+    #clients .testimonials .testimony blockquote {
+      padding: 0;
+      margin: 0; }
+      #clients .testimonials .testimony blockquote p {
+        padding: 15px;
+        margin-bottom: 25px;
+        color: #999999;
+        background-color: #e6e6e6;
+        border: 1px solid #d9d9d9; }
+      #clients .testimonials .testimony blockquote cite {
+        color: #999999; }
+  #clients .testimonials .testimony:first-of-type {
+    z-index: 2; }
+
+@media (max-width: 992px) {
+  #clients .testimony:first-of-type {
+    margin-bottom: 80px; } }
 
 #contact h2 {
   text-transform: uppercase; }
