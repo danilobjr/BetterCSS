@@ -1,5 +1,5 @@
 body > section {
-	padding: 80px 0;
+	@include padding(80px null);
 	
 	header {
 		margin-bottom: 50px;
@@ -31,7 +31,7 @@ body > section {
 	background-size: cover;
 	
 	.section-padding {
-		padding: 80px 0;
+		@include padding(80px null);
 	}
 	
 	header {
