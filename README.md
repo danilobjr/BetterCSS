@@ -18,7 +18,8 @@ Awesome! So, how can I get this?!
 4. Clone the project with command ```git clone https://github.com/danilojrr/BetterCSS.git```.
 Now you can navigate to the _BetterCSS_ folder with command ```cd BetterCSS```.
 5. Install grunt client globally ```npm install -g grunt-cli```.
-6. Done! Just type ```grunt``` before any modifications to your sass files.
+6. Install bower dependencies ```bower install```.
+7. Done! Just type ```grunt``` before any modifications to your sass files.
 
 Now you can modify your sass files and see that the styles.css is updated automatically. =]
 
