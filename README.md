@@ -37,5 +37,3 @@ Make a little project with several branches to do a design layout:
 - Grunt
 - Bootstrap
 - Bourbon
-- SMACSS
-- OOCSS
